@@ -22,7 +22,9 @@ double get_positive_number(const string& prompt) {
 }
 
 int main() {
-
+ // Ввод длины ребра с проверкой
+    double edge_length = get_positive_number("Введите длину ребра куба: ");
+    
     // Вычисление параметров
     double face_area = pow(edge_length, 2);          // Площадь одной грани
     double total_surface_area = 6 * face_area;       // Полная площадь поверхности
